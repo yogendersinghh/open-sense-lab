@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./css/carousel.css" />
+  </head>
+  <body>
+    <div class="carousell">
+      <div class="carousel__top">
+        <div class="carousel__top-left">
+          <div class="carousel__top-left__heading">featured experience</div>
+          <div class="carousel__top-left__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            dolor illo recusandae dolore at repellat tempora, eveniet debitis
+            nulla nemo dolores fuga molestiae cum neque porro aspernatur
+            praesentium beatae iure.
+          </div>
+        </div>
+        <div class="carousel__top-right">
+          <button>view all</button>
+        </div>
+      </div>
+      <div class="carousel__bottom">
+        <div class="carousel try">
+          <a class="carousel-item new" href="#one!"
+            ><img
+              src="https://images.pexels.com/photos/347141/pexels-photo-347141.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div class="carousel__bottom-hover">
+              <button>for myres beach</button>
+              <div>featured experience</div>
+            </div>
+          </a>
+          <a class="carousel-item new" href="#two!"
+            ><img
+              src="https://images.pexels.com/photos/1509803/pexels-photo-1509803.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
+            <div class="carousel__bottom-hover">
+              <button>for myres beach</button>
+              <div>featured experience</div>
+            </div></a
+          >
+          <a class="carousel-item new" href="#three!"
+            ><img
+              src="https://images.pexels.com/photos/163802/venice-cruise-mediterranean-architecture-163802.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
+            <div class="carousel__bottom-hover">
+              <button>for myres beach</button>
+              <div>featured experience</div>
+            </div></a
+          >
+          <a class="carousel-item new" href="#four!"
+            ><img
+              src="https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div class="carousel__bottom-hover">
+              <button>for myres beach</button>
+              <div>featured experience</div>
+            </div></a
+          >
+          <a class="carousel-item new" href="#five!"
+            ><img
+              src="https://images.pexels.com/photos/3512681/pexels-photo-3512681.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
+            <div class="carousel__bottom-hover">
+              <button>for myres beach</button>
+              <div>featured experience</div>
+            </div></a
+          >
+          <a class="carousel-item new" href="#six!"
+            ><img
+              src="https://images.pexels.com/photos/1509803/pexels-photo-1509803.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
+            <div class="carousel__bottom-hover">
+              <button>for myres beach</button>
+              <div>featured experience</div>
+            </div></a
+          >
+          <a class="carousel-item new" href="#seven!"
+            ><img
+              src="https://images.pexels.com/photos/347141/pexels-photo-347141.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div class="carousel__bottom-hover">
+              <button>for myres beach</button>
+              <div>featured experience</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        M.Carousel.init(elems, {
+          dist: 0,
+          shift: -100,
+          padding: 30,
+        });
+      });
+    </script>
+  </body>
+</html>

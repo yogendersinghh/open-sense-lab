@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.fest {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.fest__heading {
+  text-transform: uppercase;
+  width: 50%;
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(46, 144, 209);
+}
+.fest__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fest__bottom-images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 45%;
+  height: 400;
+  /* background-color: brown; */
+}
+.fest__bottom-images > div {
+  width: 100%;
+  height: 100%;
+}
+.fest__bottom-images > div > img {
+  width: 100%;
+  height: 100%;
+}
+.grid-one {
+  grid-column: 1 /3;
+  grid-row: 1/3;
+}
+.fest__bottom-sidecontent {
+  width: 45%;
+  height: 400px;
+}
+.fest__bottom-sidecontent h3 {
+  margin-top: 0;
+  color: rgb(247, 70, 70);
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.fest__bottom-sidecontent > p {
+  line-height: 20px;
+  font-size: 15px;
+  color: grey;
+}
+span {
+  text-transform: uppercase;
+  color: rgb(46, 144, 209);
+}
+.fest__bottom-sidecontent > div > p {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: grey;
+}
+button {
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  text-transform: capitalize;
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+}

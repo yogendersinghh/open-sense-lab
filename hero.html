@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hero</title>
+    <link rel="stylesheet" href="./css/hero.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero__countdown" id="count"></div>
+      <div class="hero__scroll">&#8964;</div>
+    </div>
+    <script>
+      setInterval(() => {
+        let time = new Date("Apr 6 2022 12:0:0").getTime();
+        let currentTime = new Date().getTime();
+        let newtime = time - currentTime;
+        let days = Math.floor(newtime / (24 * 60 * 60 * 1000));
+        let hours = Math.floor(
+          (newtime % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000)
+        );
+        let mins = Math.floor((newtime % (60 * 60 * 1000)) / (60 * 1000));
+        let secs = Math.floor((newtime % (60 * 1000)) / 1000);
+        let count = document.getElementById("count");
+        count.innerHTML = `<div class="days">
+          <p>${days}</p>
+          <h1>Days</h1>
+          </div>
+          <div class="hours">
+          <p>${hours}</p>
+          <h1>Hours</h1>
+
+          </div>
+
+          <div class="mins">
+          <p>${mins}</p>
+          <h1>Minutes</h1>
+
+          </div>
+
+          <div class="secs">
+          <p>${secs}</p>
+          <h1>Seconds</h1>
+
+          </div>`;
+        //   days + "days" + hours + "hrs: " + mins + "mins: " + seconds + "sec";
+      }, 1000);
+    </script>
+  </body>
+</html>

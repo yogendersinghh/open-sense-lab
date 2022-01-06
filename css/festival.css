@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.festival {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 570px;
+}
+.festival__top {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: justify;
+  /* height: inherit; */
+  /* background-color: turquoise; */
+  text-transform: uppercase;
+  width: 45%;
+}
+.festival__top-one {
+  font-size: 25px;
+  color: #aaaaaa;
+}
+.festival__top-two {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #444941;
+  margin-bottom: 2rem;
+}
+button {
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+}
+.festival__bottom {
+  position: relative;
+  height: 500px;
+  width: 45%;
+  background-image: url("https://images.pexels.com/photos/8107237/pexels-photo-8107237.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+}
+.festival__bottom > div {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+.festival__bottom-one {
+  font-size: 30px;
+  font-weight: 700;
+}
+.festival__bottom-two {
+  cursor: pointer;
+}

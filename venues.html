@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venues</title>
+    <link rel="stylesheet" href="./css/venues.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="venue">
+      <div class="venue__top">
+        <div class="venue__start">Venues</div>
+        <div class="venue__middle">
+          <div>september 18-20,2020</div>
+          <div>captiva island</div>
+        </div>
+        <div class="venue__end">
+          <div class="venue__end-one">
+            <div>// Captiva Island</div>
+            <div>downtown fort myres</div>
+            <div>fort myre beach</div>
+          </div>
+          <div class="venue__end-two">
+            <button>Explore Venues</button>
+          </div>
+        </div>
+      </div>
+      <div class="venue__bottom">
+        <div class="carousel carousel-slider">
+          <a class="carousel-item" href="#one!"
+            ><img
+              src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          /></a>
+          <a class="carousel-item" href="#two!"
+            ><img
+              src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          /></a>
+          <a class="carousel-item" href="#three!"
+            ><img
+              src="https://images.pexels.com/photos/4275885/pexels-photo-4275885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          /></a>
+          <a class="carousel-item" href="#four!"
+            ><img
+              src="https://images.pexels.com/photos/3022415/pexels-photo-3022415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          /></a>
+          <a class="carousel-item" href="#five!"
+            ><img
+              src="https://images.pexels.com/photos/2582548/pexels-photo-2582548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" /></a
+          ><a class="carousel-item" href="#six!"
+            ><img
+              src="https://images.pexels.com/photos/2593142/pexels-photo-2593142.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" /></a
+          ><a class="carousel-item" href="#seven!"
+            ><img
+              src="https://images.pexels.com/photos/2884498/pexels-photo-2884498.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        M.Carousel.init(elems, {
+          fullWidth: true,
+          indicators: true,
+        });
+      });
+    </script>
+  </body>
+</html>
