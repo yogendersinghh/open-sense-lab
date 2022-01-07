@@ -101,8 +101,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding-left: 5rem; */
-  /* text-align: justify; */
+
   height: 200px !important;
   width: 320px !important;
   background-color: rgb(247, 95, 40);
@@ -134,4 +133,40 @@ body {
   color: white;
   font-weight: 500;
   text-transform: capitalize;
+}
+.relative {
+  position: relative;
+  z-index: -1;
+}
+.grid-inside {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 11;
+  color: white;
+}
+.grid-button button {
+  color: white;
+  text-transform: capitalize;
+  border-radius: 25px;
+  padding: 0.2rem 2rem;
+  cursor: pointer;
+}
+
+.green {
+  border: 1px solid green;
+  background-color: green;
+}
+.blue {
+  border: 1px solid blue;
+  background-color: blue;
+}
+.orange {
+  border: 1px solid orange;
+  background-color: orange;
+}
+.grid-text {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
